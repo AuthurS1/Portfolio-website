@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif; /* Đặt font chữ mặc định là Arial, nếu không có thì dùng sans-serif */
+  display: flex; /* Sử dụng flexbox để bố cục */
+  justify-content: flex-start;
+  align-items: flex-start; /* Căn dọc (trục phụ) từ phía trên */
+  padding: 20px; /* Khoảng cách bên trong body với mép trình duyệt */
+
+  /* nền */
+  background-image: url("/static/video-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
