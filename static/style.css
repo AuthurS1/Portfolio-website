@@ -1,13 +1,62 @@
 body {
-  font-family: Arial, sans-serif; /* Đặt font chữ mặc định là Arial, nếu không có thì dùng sans-serif */
-  display: flex; /* Sử dụng flexbox để bố cục */
-  justify-content: flex-start;
-  align-items: flex-start; /* Căn dọc (trục phụ) từ phía trên */
-  padding: 20px; /* Khoảng cách bên trong body với mép trình duyệt */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f9;
+}
 
-  /* nền */
-  background-image: url("/static/video-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+nav {
+  background: #333;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+main, header {
+  padding: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input, textarea, button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ddd;
+  margin-top: 2rem;
 }
