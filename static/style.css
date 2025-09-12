@@ -1,62 +1,66 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f4f6f9;
+/* Reset mặc định của trình duyệt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Style chung cho body */
+body {
+    font-family: Arial, sans-serif; /* font chữ */
+    color: white;                   /* chữ màu trắng để dễ nhìn trên nền ảnh */
+    min-height: 100vh;              /* cao ít nhất bằng chiều cao màn hình */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar trên cùng */
 nav {
-  background: #333;
-  padding: 1rem;
+    background: rgba(0,0,0,0.6); /* nền đen mờ để chữ nổi bật */
+    padding: 10px 20px;
+    position: fixed;   /* luôn dính trên cùng */
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
+    list-style: none;   /* bỏ dấu chấm đầu dòng */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
+nav ul li a {
+    text-decoration: none; /* bỏ gạch chân */
+    color: white;
+    font-weight: bold;
 }
 
-nav a.active {
-  text-decoration: underline;
+/* Background riêng cho từng trang */
+.index-page {
+    background: url("../images/index-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
-main, header {
-  padding: 2rem;
+.about-page {
+    background: url("../images/about-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
-.card {
-  background: #fff;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.contact-page {
+    background: url("../images/contact-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.projects-page {
+    background: url("../images/projects-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
-input, textarea, button {
-  padding: 0.5rem;
-  font-size: 1rem;
-}
-
-button {
-  background: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #ddd;
-  margin-top: 2rem;
+/* Nội dung chính căn giữa */
+main {
+    margin-top: 80px; /* tránh bị che bởi navbar */
+    padding: 20px;
+    text-align: center;
 }
