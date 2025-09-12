@@ -39,24 +39,26 @@ nav ul li a {
 
 /* Background riêng cho từng trang */
 .index-page {
-    background: url("../images/index-bg.jpg") no-repeat center center fixed;
+    background: url("/static/images/tanjiro-kamado-6082x5416-23027.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
 .about-page {
-    background: url("../images/about-bg.jpg") no-repeat center center fixed;
+    background: url("/static/images/windows-11-teal-3840x2400-11768.png") no-repeat center center fixed;
     background-size: cover;
 }
 
 .contact-page {
-    background: url("../images/contact-bg.jpg") no-repeat center center fixed;
+    background: url("/static/images/windows-11-waves-3840x2400-11767.png") no-repeat center center fixed;
     background-size: cover;
 }
 
 .projects-page {
-    background: url("../images/projects-bg.jpg") no-repeat center center fixed;
+    background: url("/static/images/projects-bg.jpg") no-repeat center center fixed;
     background-size: cover;
 }
+
+
 
 /* Nội dung chính căn giữa */
 main {
