@@ -45,6 +45,10 @@ nav ul li a {
     background-position: center;
 }
 
+.homepage1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+}
 .about-page {
     background-image: url("images/windows-11-teal-3840x2400-11768.png");
     background-size: cover;
