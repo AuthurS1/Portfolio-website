@@ -5,17 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} - Portfolio</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Thư viện Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body class="{{ page_class }}">
-    <!-- Navbar -->
-    <nav>
+
+    <!-- Thanh điều hướng kiểu Magic Navigation -->
+    <div class="navigation">
         <ul>
-            <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="{{ url_for('about') }}">About</a></li>
-            <li><a href="{{ url_for('projects') }}">Projects</a></li>
-            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            <li class="list {% if title=='Home' %}active{% endif %}">
+                <a href="{{ url_for('home') }}">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                </a>
+            </li>
+            <li class="list {% if title=='About' %}active{% endif %}">
+                <a href="{{ url_for('about') }}">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                </a>
+            </li>
+            <li class="list {% if title=='Projects' %}active{% endif %}">
+                <a href="{{ url_for('projects') }}">
+                    <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
+                </a>
+            </li>
+            <li class="list {% if title=='Contact' %}active{% endif %}">
+                <a href="{{ url_for('contact') }}">
+                    <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+                </a>
+            </li>
         </ul>
-    </nav>
+    </div>
 
     <!-- Nội dung chính -->
     <main>

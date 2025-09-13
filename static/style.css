@@ -72,3 +72,48 @@ main {
     padding: 20px;
     text-align: center;
 }
+
+/* Magic Navigation Menu */
+.navigation {
+    width: 420px;
+    height: 70px;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.navigation ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.navigation ul li {
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+
+.navigation ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.navigation ul li.active a {
+    color: #00ffff; /* Màu sáng khi active */
+}
+
