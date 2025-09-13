@@ -4,7 +4,7 @@
     <meta charset="UTF-8"> <!-- Định dạng UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Home</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- Gắn file CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- Gắn file CSS -->
 </head>
 <body class="index-page"> <!-- Thêm class để áp dụng background riêng -->
 
@@ -24,6 +24,6 @@
         <p>This is the homepage.</p>
     </main>
 
-    <script src="js/script.js"></script> <!-- Gắn file JS -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script> <!-- Gắn file JS -->
 </body>
 </html>

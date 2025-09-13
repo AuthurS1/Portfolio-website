@@ -12,7 +12,9 @@ body {
     min-height: 100vh;              /* cao ít nhất bằng chiều cao màn hình */
     display: flex;
     flex-direction: column;
+
 }
+
 
 /* Navbar trên cùng */
 nav {
@@ -39,25 +41,32 @@ nav ul li a {
 
 /* Background riêng cho từng trang */
 .index-page {
-    background: url("../images/index-bg.jpg") no-repeat center center fixed;
+    background-image: url("static/images/tanjiro-kamado-6082x5416-23027.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .about-page {
-    background: url("../images/about-bg.jpg") no-repeat center center fixed;
+    background-image: url("static/images/windows-11-teal-3840x2400-11768.png");
     background-size: cover;
-}
-
-.contact-page {
-    background: url("../images/contact-bg.jpg") no-repeat center center fixed;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .projects-page {
-    background: url("../images/projects-bg.jpg") no-repeat center center fixed;
+    background-image: url("static/images/projects-bg.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+.contact-page {
+    background-image: url("static/images/windows-11-waves-3840x2400-11767.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 /* Nội dung chính căn giữa */
 main {
     margin-top: 80px; /* tránh bị che bởi navbar */
